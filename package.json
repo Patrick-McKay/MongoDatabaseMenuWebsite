@@ -1,0 +1,20 @@
+{
+  "name": "assignment4_patrickmckay",
+  "version": "1.0.0",
+  "description": "Online store for a restuarant",
+  "main": "server.js",
+  "dependencies": {
+    "connect-mongodb-session": "^2.3.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongodb": "^3.5.5",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Patrick McKay",
+  "license": "ISC"
+}

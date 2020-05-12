@@ -1,0 +1,24 @@
+html
+	head
+		title User List
+			
+	body
+
+		include ../partials/head
+
+		div#main
+			br
+			label Search
+			br
+			input#search(type='text' name='search')
+			input(type='button' value='Search' onclick="search()")
+			br
+			br
+			h4 Users: <br />
+
+			each user in users
+				if !user.privacy
+					a(href="/users/" + user._id) #{user.username}<br />
+
+
+script(src='client.js')

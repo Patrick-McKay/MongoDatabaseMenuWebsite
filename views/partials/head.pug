@@ -1,0 +1,32 @@
+
+div#header
+
+.a
+	style.
+		* {
+		box-sizing: border-box;
+		}
+
+		body {
+		background-color: #7796B5;
+		}
+		h1 {
+		color: white;
+		text-align: center;
+		}
+
+
+	a(href="/") Home	|
+	a(href="/userlist") Users |
+
+	if status
+		a(href="/order") Order	|
+		a(href="/users/" + id) Profile |
+		a(href="/logout") Log Out
+
+	
+
+	if !status
+		a(href="/register") Register	|
+		a(href="/login") Log In
+	

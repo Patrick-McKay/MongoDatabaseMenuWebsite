@@ -1,0 +1,31 @@
+html
+	head
+		title User Page
+			
+	body
+
+		include ../partials/head
+
+		div#main
+			h2 Username: #{user.username}
+			br
+			
+			if userLog
+				h2 Privacy settings
+				
+				label Private profile : 
+				input#private(type='checkbox' onclick="updateP()" value=id checked=user.privacy)
+				br
+			
+			
+
+
+
+			h2 Order History: <br />
+				if(user.orders)
+					-let n = 1
+					each order in user.orders
+						a(href="/orders/" + order) Order #{n}<br />
+						-n++
+
+script(src='client.js')

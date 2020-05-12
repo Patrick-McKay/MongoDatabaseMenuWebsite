@@ -1,0 +1,25 @@
+html
+	head
+		title Log in 
+			
+	body
+
+		include ../partials/head
+
+		div#main
+			h2 Registration
+			br
+			form
+				label UserName
+				br
+				input#username(type='text' name='username')
+				br
+				label Password
+				br
+				input#password(type='text' name='password')
+				br
+				input(type='button' value='Sign Up' onclick="register()")
+
+
+script(src='client.js')
+		
